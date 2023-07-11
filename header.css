@@ -1,0 +1,179 @@
+.header
+{
+ height: 55px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ position:fixed;
+ background-color: white;
+ top:0;
+ left:0;
+ right:0;
+ margin-bottom: 10px;
+ border-bottom-width:1px ;
+ border-bottom-style: solid;
+ border-color: rgb(202, 206, 204);
+ z-index: 1;
+
+}
+.left
+{
+    display: flex;
+    align-items:center;
+}
+.center
+{
+ flex:1;
+ display: flex;
+ margin-left: 70px;
+ margin-right: 25px;
+ max-width: 590px;
+ align-items: center;
+ margin-top: 10px;
+ margin-bottom: 15px;
+}
+.right
+{
+ width:300px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin-right: 20px;
+ flex-shrink: 0;
+}
+.hamburger
+{
+height: 25px;
+margin-right: 20px;
+margin-left: 20px;
+
+}
+.youtube
+{
+    width:100px;
+}
+.mic_icon
+{
+    height:29px;
+    width:25px;
+  
+}
+.search_icon
+{
+    height: 23px;
+    
+  
+}
+.Search_bar
+{
+     width: 0;
+flex: 1;
+height:34px;
+border-width: 1px;
+padding-left: 10px;
+border-color: rgb(231, 231, 226);
+box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+}
+.Search_bar::placeholder{
+   font-size: 16px;
+   padding-left: 10px; 
+}
+.search_button{
+     height :38px;
+     width: 60px;
+     background-color: rgb(240, 240, 234);
+     border-width: 1px;
+     border-style: solid;
+     border-color: rgb(214, 214, 208);
+     margin-left: -1px;
+     margin-right: 10px;  
+     
+}
+.search_button, .mic_button, .upload_icon
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.search_button .tooltip,
+.mic_button .tooltip,
+.upload_icon .tooltip
+{
+position: absolute;
+background-color: gray;
+color: white;
+font-size: 12px;
+padding: 5px;
+border-radius: 4px;
+bottom:-30px;
+opacity: 0;
+transition: opacity 0.15s;
+pointer-events: none;
+white-space: nowrap;
+}
+.search_button:hover .tooltip,
+.mic_button:hover .tooltip,
+.upload_icon:hover .tooltip
+{
+ opacity:1;
+}
+.mic_button
+{
+    border-radius: 30px;
+    border-width: 0px;
+    background-color: rgb(252, 252, 252);
+    height :38px;
+    
+}
+.upload
+{
+ height : 35px;
+}
+.noti_bell
+{
+    height: 30px;
+}
+.sign
+{
+    height: 25px;
+}
+.Apps
+{
+    height: 30px;
+}
+.sidebar
+{
+    background-color: white;
+    position:fixed;
+    top: 55px;
+    bottom:0;
+    left:0;
+    width:72px;
+    height: 100%;
+    z-index: 1;
+
+}
+.side_icons
+{
+height:95px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+cursor: pointer;
+}
+.side_icons:hover
+{
+    background-color: gainsboro;
+}
+.sidebar img{
+height: 30px;
+margin-bottom: 4px;
+}
+.sidebar div
+{
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+}
